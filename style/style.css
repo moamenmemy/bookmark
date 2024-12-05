@@ -1,0 +1,124 @@
+main{
+   min-height: 100vh;
+    background-color: #f7ecde;
+}
+main h1{
+    
+        font-size: 50px;
+        font-family: "Pacifico", cursive;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        isolation: isolate;
+}
+ main h1::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    background-color: #fe6060;
+    transition: height 350ms;
+    z-index: -1;
+ }
+
+ main h1:hover:before{
+height: 60%;
+ }
+
+ .input-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+flex-direction: column;
+}
+ .bookmark h2{
+    text-align: center;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+
+ .bookmark{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+
+ }
+ .btn-submit{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+    align-self: center;
+ }
+
+ .btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+
+.alert-modal{
+   position: absolute;
+   background-color: #352e285d;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+
+.alert-modal-box{
+   background-color: #fff;
+   /* width: 35%; */
+   border-radius: 10px;
+}
+
+.modal-head{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.circles span {
+   display: block;
+   width: 20px;
+   height: 20px;
+}
+.circles span:nth-child(1) {
+   background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+   background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+   background-color: #4db748;
+}
+
+.fa.fa-close{
+   cursor: pointer;
+}
